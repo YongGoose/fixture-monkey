@@ -698,7 +698,7 @@ class FixtureMonkeyOptionsTest {
 		ConcreteIntValue actual3 = sut.giveMeOne(ConcreteIntValue.class);
 
 		then(actual).hasSizeBetween(1, 3);
-		then(actual2).hasSizeLessThan(5);
+		then(actual2).hasSizeLessThan(3);
 		then(actual3.getIntValue()).isEqualTo(RegisterGroup.FIXED_INT_VALUE.getIntValue());
 
 	}
